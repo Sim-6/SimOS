@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desktopstyle.css">
+    <title>SimOS</title>
+</head>
+<body onload="startTime()">
+    <script src="../script.js"></script>
+    <script src="desktopscript.js"></script> 
+
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <div class="tume">
+            <div id="txt" class="datum"></div>
+            <h1 id="date"></h1> 
+          </div>
+
+          <div class="setting">
+            <a onclick="cbgamoungus()">BG: Among US</a>
+            <a onclick="cbgmountion()">BG: Mountains</a>
+            <a onclick=" cbgmontary()">BG: Montaray</a>
+            <a onclick=" cbggalaxy()">BG: galaxy</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+          </div>
+          <div class="mainele">
+            <a onclick="window.open('terminal/terminal.html','terminal','width=700,height=550')">Terminal</a>
+            <a onclick="window.open('rechner/rechner.html','rechner','width=500,height=410')">Rechner</a>
+            <a onclick="window.open('settings/settings.html','settings','width=500,height=410')">Einstellungen</a>
+            <a onclick="window.open('https://open.spotify.com/','spotify','width=900,height=700')">Spotify</a>
+            <a onclick="window.open('txtedit/index.html','settings','width=700,height=410')">txtEdit</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+            <a href="#">///</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <img src="home_FILL0_wght400_GRAD0_opsz48.svg" class="home" onclick="openNav()">
+    </div>
+</body>
+</html>

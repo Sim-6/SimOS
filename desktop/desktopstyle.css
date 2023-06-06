@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background: url("https://rare-gallery.com/uploads/posts/501870-landscape-anime.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+.taskbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    color: white;
+    text-align: center;
+}
+.home {
+    cursor: pointer;
+    position: absolute;
+    left: 0.5%;
+}
+.tume {
+    position: absolute;
+    left: 2%;
+}
+
+.datum {
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+.setting {
+    position: absolute;
+    left: 60%;
+}
+.mainele {
+    position: absolute;
+    left: 45%;
+    text-align: center; /* Centered text/links */
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(80px);
+    color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+  
+/* Position the content inside the overlay */
+.overlay-content {
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+  
+/* The navigation links inside the overlay */
+.overlay a {
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+  
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: white
+}
+  
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
