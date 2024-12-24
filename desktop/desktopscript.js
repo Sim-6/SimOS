@@ -21,7 +21,7 @@ function detectspecialkeys(e) {
 document.onkeydown = detectspecialkeys
 
 function cbgamoungus() {
-  document.body.style.backgroundImage = "url('https://cdn1.epicgames.com/salesEvent/salesEvent/amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075')"; 
+  document.body.style.backgroundImage= "url(https://cdn1.epicgames.com/salesEvent/salesEvent/amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075)";
 }
 function cbgmountion() {
   document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/55/da/40/55da4005ed6ea88cbbb2689d3db8c44d.jpg')";
@@ -31,4 +31,23 @@ function cbgmontary() {
 }
 function cbggalaxy() {
   document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/a2/c7/7b/a2c77b6566c45d9404e17ab0beaafdfb.jpg')";
+}
+
+function openterminal() {
+  new WinBox("Terminal", {
+    url: "terminal.html",
+    width: "700",
+    height: "550",
+    icon: "icons/terminal.svg",
+  });
+}
+
+function opensettings() {
+  new WinBox("Settings", {
+    width: "700",
+    height: "550",
+    icon: "icons/terminal.svg",
+    mount: document.getElementById("content")
+                   .cloneNode(true)
+  });
 }
