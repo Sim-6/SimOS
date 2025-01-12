@@ -46,6 +46,7 @@ $('body').terminal({
         this.echo($('<p>S:/SimOS/desktop/terminal/</p><ul><li>terminal.html</li><li>terminalscript.js</li></ul>'))
     },
     info: function() {
+        this.echo(greetings.innerHTML)
         this.echo($('<p>SimOS Version: Alpha-01</p>'))
     },
     sysinfo: function() {
@@ -53,9 +54,9 @@ $('body').terminal({
     },
     help: function() {
         this.echo($('<ul><li>hello + name</li><li>cat</li><li>ls</li><li>info</li><li>sysinfo</li><li>clear</li></ul>'))
-    },
+    },  
     exit: function() {
-        window.close();
+        winbox.close();
     }
 }, {
     greetings: greetings.innerHTML

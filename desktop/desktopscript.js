@@ -42,6 +42,15 @@ function openterminal() {
   });
 }
 
+function openpet() {
+  new WinBox("Pet", {
+    url: "pet.html",
+    width: "700",
+    height: "550",
+    icon: "icons/pet.svg",
+  });
+}
+
 function opensettings() {
   new WinBox("Settings", {
     width: "700",
